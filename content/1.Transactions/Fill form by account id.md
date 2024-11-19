@@ -1,0 +1,104 @@
+## API: Retrieve Project, Platform, Account, and Virtual Bills by Account ID
+
+### Endpoint
+
+**GET** `/api/client/project/account/{account_id}`
+
+### Response Structure
+
+```js
+{
+  "project": {
+    "name": "test_2",
+    "offerUrl": "https://www.str.ru",
+    "text": null,
+    "attachments": [],
+    "status": "On editing",
+    "platform": {
+      "geo": "",
+      "startingBudget": null,
+      "kpi": "",
+      "comment": null,
+      "platformComment": null,
+      "platformCommentFromClient": null,
+      "status": "Pending",
+      "platform": {
+        "name": "VK реклама",
+        "avatar": {
+          "id": "018fc9c9-cede-7397-86d7-6f6f6c184a3f",
+          "createdAt": "2024-05-30T13:56:37+00:00",
+          "updatedAt": "2024-05-30T13:56:37+00:00"
+        },
+        "countAccounts": 0,
+        "id": "018fc9c9-cfe7-7fe9-98fd-22be4dcf0656",
+        "createdAt": "2024-05-30T13:56:37+00:00",
+        "updatedAt": "2024-05-30T13:56:37+00:00"
+      },
+      "account": {
+        "id": "account-uuid-1",
+        "name": "Account 1",
+        "virtual_bills": [
+          {
+            "id": "uuid-2",
+            "amount": 0,
+            "currency": {
+              "name": "$"
+            },
+            "createdAt": "2024-09-09T12:43:48+00:00",
+            "updatedAt": "2024-09-09T12:43:48+00:00"
+          }
+        ]
+      },
+      "businessDirection": null,
+      "commission": null,
+      "commentFromAdmin": null,
+      "commentForTeamLead": null,
+      "costOfKpi": null,
+      "paymentModel": null,
+      "teamLeadId": null,
+      "timerStartedAt": null,
+      "isDistributed": false,
+      "isRejected": false,
+      "id": "1efa5900-989b-6018-9223-cdb49b52d89c",
+      "createdAt": "2024-11-18T09:32:32+00:00",
+      "updatedAt": "2024-11-19T07:38:19+00:00",
+      "platformId": "018fc9c9-cfe7-7fe9-98fd-22be4dcf0656",
+      "projectName": "test_2"
+    },
+    "user": {
+      "email": "rodiongavrilov@gmail.com",
+      "profile": {
+        "name": "Rodion",
+        "company": "Rodion",
+        "phoneNumber": "",
+        "id": "1ef21be4-fbd1-6c1a-9852-39e68d677f2d",
+        "createdAt": "2024-06-03T15:31:13+00:00",
+        "updatedAt": "2024-11-15T08:23:35+00:00"
+      },
+      "id": "1ef21be4-fb58-6022-9ef9-39e68d677f2d",
+      "createdAt": "2024-06-03T15:31:13+00:00",
+      "updatedAt": "2024-11-15T08:23:35+00:00"
+    },
+    "offer_monetization": null,
+    "numberOfAccounts": null,
+    "projectDescription": null,
+    "projectComment": "qq",
+    "projectCommentFromClient": "ready",
+    "id": "1efa32ae-83d0-6a20-9a5e-73da1a890a46",
+    "createdAt": "2024-11-15T08:23:35+00:00",
+    "updatedAt": "2024-11-19T07:38:19+00:00"
+  }
+}
+```
+
+### Error Handling
+
+Status CodeError Message401Unauthorized (missing or invalid cookie)403Forbidden (access restricted)404"Account not found"400"Invalid request parameters"500"Internal server error"
+
+### Description
+
+- **401 Unauthorized**: The request lacks valid authentication credentials, usually due to a missing or invalid cookie.
+- **403 Forbidden**: The client does not have access rights to view the project or account, indicating restricted access.
+- **404 Account not found**: The requested account could not be found in the system.
+- **400 Invalid request parameters**: The provided request parameters are invalid or incomplete.
+- **500 Internal server error**: A server-side error occurred while processing the request.
