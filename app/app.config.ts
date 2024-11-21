@@ -62,12 +62,20 @@ export default defineAppConfig({
         label: 'Repository',
         to: 'https://gitlab.adskill.io/adskill',
         target: '_blank'
-      }, {
+      },
+        {
         icon: 'i-heroicons-link',
         label: 'Service page',
         to: 'http://staging.redesign.app.adskill.io/projects',
         target: '_blank'
-      }]
+      },
+        {
+        icon: 'i-simple-icons-figma',
+        label: 'Figma design',
+        to: 'https://www.figma.com/design/uP8THkptwZSOUgfcJ5ucdo/Full-Platform-%E2%80%94-MVP?node-id=167-4351&node-type=canvas&t=r6TORgA32HNxhttP-0',
+        target: '_blank'
+      },
+      ]
     }
   }
 })
