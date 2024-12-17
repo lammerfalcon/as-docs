@@ -72,12 +72,20 @@ export default defineAppConfig({
         label: 'Figma design',
         to: 'https://www.figma.com/design/uP8THkptwZSOUgfcJ5ucdo/Full-Platform-%E2%80%94-MVP?node-id=167-4351&node-type=canvas&t=r6TORgA32HNxhttP-0',
         target: '_blank'
-      }, {
+      },
+        {
         icon: 'i-simple-icons-atlassian',
         label: 'Jira',
         to: 'https://adskill.atlassian.net/jira/software/projects/AP/boards/1',
         target: '_blank'
-      }]
+      },
+        {
+        icon: 'i-simple-icons-php',
+        label: 'Profiler',
+        to: 'http://staging.gateway.adskill.io/_profiler/',
+        target: '_blank'
+      }
+      ]
     }
   }
 })
