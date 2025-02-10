@@ -22,9 +22,9 @@ export default defineAppConfig({
     colorMode: true,
     links: [{
       'icon': 'i-heroicons-link',
-      'to': 'https://adskill.io',
+      'to': 'https://AdSkill.com',
       'target': '_blank',
-      'aria-label': 'AdSkill.io platform docs'
+      'aria-label': 'AdSkill.com platform docs'
     }]
   },
   // footer: {
@@ -65,7 +65,7 @@ export default defineAppConfig({
       }, {
         icon: 'i-heroicons-link',
         label: 'Service page',
-        to: 'http://staging.redesign.app.adskill.io/projects',
+        to: 'http://staging.app.adskill.com/projects',
         target: '_blank'
       }, {
         icon: 'i-simple-icons-figma',

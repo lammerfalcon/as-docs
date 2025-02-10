@@ -6,22 +6,22 @@ hero:
   description: 'Internal documentation and confluence for AdSkill'
   orientation: horizontal
   headline:
-    label: AdSkill.io
-    to: https://adskill.io
+    label: AdSkill.com
+    to: https://AdSkill.com
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: Get started
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
-      to: '/transactions'
+      to: '/development-processes/building-quality-and-stability'
       size: lg
 features:
   title: 'All-in-one docs template'
   links:
-    - label: 'Explore AdSkill.io'
+    - label: 'Explore AdSkill.com'
       trailingIcon: 'i-heroicons-arrow-right-20-solid'
       color: 'gray'
-      to: 'https://adskill.io'
+      to: 'https://AdSkill.com'
       target: '_blank'
       size: lg
   items:
